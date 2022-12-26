@@ -22,6 +22,7 @@ html {
 
 body {
   margin: 0;
+  box-sizing: border-box;
 }
 
 /**
@@ -346,4 +347,44 @@ template {
 
 [hidden] {
   display: none;
+}
+
+body {
+  background-image: url("https://i.pinimg.com/originals/91/fc/54/91fc549c130f969b61afa9065ad2132d.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #cccccc;
+ }
+
+ h1{
+  text-align: center;
+  color: rgba(224, 224, 189, 0.823);
+ }
+
+section.flex-container{
+  border: solid black 5px;  
+  display: flex;
+  flex-flow: row wrap;
+  align-items: space-between;
+  align-content: space-between;
+  justify-content:space-between ;
+  gap: 10px 20px;
+}
+
+section.flex-container > section{
+  height: 250px;
+  width: 400px;
+  box-sizing: border-box;
+  background-color: rebeccapurple;
+  border: solid rgba(68, 185, 47, 0.652) 5px;
+  display: flex;
+  flex-grow: 1;
+  /* flex-shrink: 1; */
+}
+
+img{
+  max-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  vertical-align: bottom;
 }
